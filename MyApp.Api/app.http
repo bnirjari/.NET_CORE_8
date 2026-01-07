@@ -1,0 +1,30 @@
+GET http://localhost:5116/weatherforecast
+###
+GET http://localhost:5116/apps
+###
+GET http://localhost:5116/appa/4
+###
+POST http://localhost:5116/apps
+Content-Type: application/json 
+
+{
+    "Name": "App Four",
+    "Genre": "Health",
+    "Price": 7.99,
+    "ReleaseDate": "2023-05-20"
+} 
+
+###
+PUT http://localhost:5116/apps/2
+Content-Type: application/json 
+
+{
+    "Id": 2,
+    "Name": "Updated App Two",
+    "Genre": "Productivity",
+    "Price": 4.99,
+    "ReleaseDate": "2022-11-15"
+}
+
+###
+DELETE http://localhost:5116/apps/3
